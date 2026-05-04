@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dados recebidos</title>
+</head>
+<body>
+
+<h1>Dados capturados:</h1>
+
+<p id="nome"></p>
+<p id="senha"></p>
+
+<script>
+var nome = localStorage.getItem("nome");
+var senha = localStorage.getItem("senha");
+
+document.getElementById("nome").innerText = "Nome: " + nome;
+document.getElementById("senha").innerText = "Senha: " + senha;
+</script>
+
+</body>
+</html>
